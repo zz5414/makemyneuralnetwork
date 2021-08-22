@@ -16,8 +16,8 @@ class OBJECT(IntEnum):
 
 _HEIGHT = 200
 _WIDTH = 200
-_TRAIN_SAMPLE = 60000
-_VALID_SAMPLE = 12000
+_TRAIN_SAMPLE = 600
+_VALID_SAMPLE = 120
 
 _MIN_WIDTH = 140
 _MAX_WIDTH = 150
@@ -54,8 +54,8 @@ def is_unique(records, fig_type, cx, cy, w, tick, lt, rb):
 
 
 def gen_parameter(fig_type):
-    tick = random.randint(0, 3)
-    if tick == 0: tick -= 1
+    tick = random.randint(1, 3)
+    # if tick == 0: tick -= 1
 
     w = random.randint(_MIN_WIDTH, _MAX_WIDTH)
 
